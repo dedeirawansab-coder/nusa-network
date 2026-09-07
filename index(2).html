@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NUSA Network — Empowering Local Commerce Through Web3</title>
+<style>
+:root{
+  --bg:#071713;--bg2:#0b211b;--card:#102a22;--gold:#d8ad58;--gold2:#f1d18a;
+  --green:#2d8a61;--text:#f5f1e8;--muted:#aebcb4;--line:rgba(216,173,88,.18)
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{width:min(1180px,92%);margin:auto}
+nav{position:sticky;top:0;z-index:20;background:rgba(7,23,19,.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:11px;font-weight:800;font-size:22px;letter-spacing:1px}
+.mark{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,var(--gold),#7b5722);display:grid;place-items:center;color:#071713;font-weight:900}
+.links{display:flex;gap:25px;color:var(--muted);font-size:14px}.links a:hover{color:var(--gold2)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 21px;border-radius:999px;background:linear-gradient(135deg,var(--gold2),var(--gold));color:#182019;font-weight:700;border:0}
+.hero{min-height:700px;display:flex;align-items:center;background:radial-gradient(circle at 75% 35%,#204a39 0,transparent 32%),linear-gradient(120deg,#071713,#0b211b)}
+.grid{display:grid;grid-template-columns:1.15fr .85fr;gap:55px;align-items:center}
+.eyebrow{color:var(--gold2);letter-spacing:4px;font-size:12px;font-weight:700}
+h1{font-size:clamp(46px,7vw,82px);line-height:1.02;margin:16px 0 24px;letter-spacing:-2px}
+h1 span{color:var(--gold2)} .lead{font-size:19px;color:var(--muted);max-width:650px}
+.hero-actions{display:flex;gap:14px;margin-top:30px;flex-wrap:wrap}.btn.outline{background:transparent;color:var(--text);border:1px solid rgba(255,255,255,.22)}
+.stats{display:flex;gap:28px;margin-top:48px;flex-wrap:wrap}.stat{padding-right:28px;border-right:1px solid var(--line)}.stat b{display:block;font-size:25px;color:var(--gold2)}.stat span{font-size:13px;color:var(--muted)}
+.hero-card{padding:28px;border:1px solid var(--line);border-radius:28px;background:linear-gradient(160deg,rgba(24,63,50,.9),rgba(8,27,22,.9));box-shadow:0 25px 70px #0006}
+.coin{width:180px;height:180px;margin:10px auto 26px;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 35% 30%,#fff0b8,var(--gold) 35%,#77501d 75%);box-shadow:inset 0 0 0 8px #e7bf6b55,0 20px 60px #0008;color:#163426;font-size:32px;font-weight:900}
+.wallet{display:flex;justify-content:space-between;padding:16px;border-radius:16px;background:#071713;border:1px solid var(--line);margin:10px 0}.small{font-size:12px;color:var(--muted)}
+section{padding:95px 0}.section-title{text-align:center;max-width:760px;margin:0 auto 50px}.section-title h2{font-size:42px;margin:10px 0}.section-title p{color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{padding:28px;background:linear-gradient(160deg,#112c24,#0a1e19);border:1px solid var(--line);border-radius:20px}.icon{font-size:29px}.card h3{margin:14px 0 8px}.card p{color:var(--muted);font-size:14px}
+.dark{background:#06120f}.ecosystem{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}.eco{text-align:center;padding:20px 10px;border:1px solid var(--line);border-radius:18px;background:#0b211b}.eco b{display:block;margin-top:8px;font-size:13px}.eco span{font-size:11px;color:var(--muted)}
+.token{display:grid;grid-template-columns:.9fr 1.1fr;gap:45px;align-items:center}.token-box{padding:42px;border-radius:28px;background:linear-gradient(135deg,#e3bd6b,#8a6429);color:#182019}.token-box .coin{background:#f6d681;width:150px;height:150px;margin:0 auto 20px}.alloc{display:grid;gap:13px}.row{display:grid;grid-template-columns:160px 1fr 45px;gap:10px;align-items:center;font-size:14px}.bar{height:9px;border-radius:10px;background:#18352c;overflow:hidden}.fill{height:100%;background:linear-gradient(90deg,var(--gold),var(--gold2))}
+.roadmap{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.phase{padding:22px;border-top:2px solid var(--gold);background:#0b211b}.phase b{color:var(--gold2)}.phase p{font-size:13px;color:var(--muted)}
+.cta{text-align:center;padding:75px 25px;border-radius:28px;background:radial-gradient(circle at top,#245842,#0b211b);border:1px solid var(--line)}
+footer{padding:35px 0;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+@media(max-width:900px){.links{display:none}.grid,.token{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.ecosystem{grid-template-columns:repeat(2,1fr)}.roadmap{grid-template-columns:1fr}.hero{padding:60px 0}.hero-card{max-width:500px}.stat{border:0}.row{grid-template-columns:110px 1fr 35px}}
+</style>
+</head>
+<body>
+<nav><div class="container nav">
+  <div class="brand"><div class="mark">N</div>NUSA <span style="font-weight:400;color:#d8ad58">NETWORK</span></div>
+  <div class="links"><a href="#about">About</a><a href="#product">Product</a><a href="#token">Token</a><a href="#ecosystem">Ecosystem</a><a href="#roadmap">Roadmap</a></div>
+  <a class="btn" href="#join">Join the Movement →</a>
+</div></nav>
+
+<main>
+<section class="hero"><div class="container grid">
+ <div>
+  <div class="eyebrow">INDONESIA • WEB3 • LOCAL COMMERCE</div>
+  <h1>Empowering Local Commerce Through <span>Web3</span></h1>
+  <p class="lead">NUSA Network connects local businesses, communities, and customers through a new generation of loyalty, rewards, and digital commerce infrastructure.</p>
+  <div class="hero-actions"><a class="btn" href="#about">Explore NUSA →</a><a class="btn outline" href="#token">Discover $NUSA</a></div>
+  <div class="stats"><div class="stat"><b>1,000+</b><span>Target UMKM Onboard</span></div><div class="stat"><b>25,000+</b><span>Target Users</span></div><div class="stat"><b>1 Vision</b><span>A Stronger Local Economy</span></div></div>
+ </div>
+ <div class="hero-card">
+   <div class="coin">NUSA</div>
+   <div class="wallet"><div><b>NUSA Wallet</b><div class="small">Rewards & Loyalty</div></div><b style="color:var(--gold2)">128.50</b></div>
+   <div class="wallet"><div><b>Local Rewards</b><div class="small">Earn from everyday commerce</div></div><span>🎁</span></div>
+   <div class="wallet"><div><b>Merchant Network</b><div class="small">Connect. Shop. Support Local.</div></div><span>🏪</span></div>
+ </div>
+</div></section>
+
+<section id="about"><div class="container">
+ <div class="section-title"><div class="eyebrow">THE VISION</div><h2>One Network for Local Commerce</h2><p>NUSA transforms fragmented loyalty programs into a connected ecosystem where rewards can create value across participating merchants and communities.</p></div>
+ <div class="cards">
+  <div class="card"><div class="icon">🏪</div><h3>NUSA Merchant</h3><p>Digital tools, customer engagement, campaigns, analytics, and rewards for growing local businesses.</p></div>
+  <div class="card"><div class="icon">🎁</div><h3>NUSA Rewards</h3><p>A connected loyalty layer designed to make every local transaction more meaningful.</p></div>
+  <div class="card"><div class="icon">🌐</div><h3>NUSA Infrastructure</h3><p>Web3-ready APIs and blockchain integrations for partners and the next generation of local commerce.</p></div>
+ </div>
+</div></section>
+
+<section class="dark" id="product"><div class="container">
+ <div class="section-title"><div class="eyebrow">NUSA PRODUCTS</div><h2>Built for People & Businesses</h2></div>
+ <div class="cards">
+  <div class="card"><div class="icon">📱</div><h3>NUSA App</h3><p>Discover local businesses, collect rewards, access promotions, and manage your NUSA experience.</p></div>
+  <div class="card"><div class="icon">📊</div><h3>Merchant Dashboard</h3><p>Understand customers, manage rewards, launch campaigns, and grow your business.</p></div>
+  <div class="card"><div class="icon">🔗</div><h3>NUSA API</h3><p>Connect POS systems, marketplaces, and partner applications to the NUSA ecosystem.</p></div>
+ </div>
+</div></section>
+
+<section id="ecosystem"><div class="container">
+ <div class="section-title"><div class="eyebrow">ECOSYSTEM</div><h2>The NUSA Flywheel</h2><p>More merchants create more utility. More customers create more transactions. More transactions strengthen the ecosystem.</p></div>
+ <div class="ecosystem">
+  <div class="eco">🏪<b>Marketplace</b><span>Local Products</span></div>
+  <div class="eco">🎁<b>Loyalty</b><span>Rewards</span></div>
+  <div class="eco">💳<b>Digital Pay</b><span>Commerce</span></div>
+  <div class="eco">📈<b>Merchant</b><span>Dashboard</span></div>
+  <div class="eco">🤝<b>Community</b><span>Governance</span></div>
+  <div class="eco">⛓️<b>Web3</b><span>Infrastructure</span></div>
+ </div>
+</div></section>
+
+<section class="dark" id="token"><div class="container token">
+ <div class="token-box"><div class="coin">$N</div><div class="eyebrow" style="color:#30503c">NUSA TOKEN</div><h2 style="font-size:42px;margin:8px 0">$NUSA</h2><p>Designed as an ecosystem utility layer for rewards, merchant services, staking benefits, and community participation.</p><b>Total Supply: 1,000,000,000 NUSA</b></div>
+ <div><div class="eyebrow">TOKENOMICS</div><h2>Designed for Long-Term Ecosystem Growth</h2><div class="alloc">
+  <div class="row"><span>Community</span><div class="bar"><div class="fill" style="width:100%"></div></div><b>30%</b></div>
+  <div class="row"><span>Ecosystem</span><div class="bar"><div class="fill" style="width:67%"></div></div><b>20%</b></div>
+  <div class="row"><span>Liquidity</span><div class="bar"><div class="fill" style="width:50%"></div></div><b>15%</b></div>
+  <div class="row"><span>Development</span><div class="bar"><div class="fill" style="width:33%"></div></div><b>10%</b></div>
+  <div class="row"><span>Treasury</span><div class="bar"><div class="fill" style="width:33%"></div></div><b>10%</b></div>
+  <div class="row"><span>Team</span><div class="bar"><div class="fill" style="width:27%"></div></div><b>8%</b></div>
+ </div></div>
+</div></section>
+
+<section id="roadmap"><div class="container">
+ <div class="section-title"><div class="eyebrow">ROADMAP</div><h2>Building NUSA Step by Step</h2></div>
+ <div class="roadmap">
+  <div class="phase"><b>01 • Foundation</b><p>Brand, website, tokenomics, whitepaper, community.</p></div>
+  <div class="phase"><b>02 • MVP</b><p>Merchant onboarding, loyalty engine, NUSA App prototype.</p></div>
+  <div class="phase"><b>03 • Growth</b><p>More merchants, users, partnerships, and ecosystem expansion.</p></div>
+  <div class="phase"><b>04 • Web3</b><p>Wallet, smart contracts, staking, and token utility.</p></div>
+  <div class="phase"><b>05 • Global</b><p>Expand from Indonesia to ASEAN and global local commerce.</p></div>
+ </div>
+</div></section>
+
+<section id="join"><div class="container"><div class="cta"><div class="eyebrow">JOIN THE MOVEMENT</div><h2 style="font-size:48px;margin:12px 0">Together We Build a Stronger Local Economy</h2><p style="color:var(--muted);max-width:620px;margin:0 auto 28px">NUSA Network starts with real merchants, real communities, and real utility.</p><a class="btn" href="mailto:hello@nusanetwork.id">Build with NUSA →</a></div></div></section>
+</main>
+<footer><div class="container" style="display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap"><span>© 2026 NUSA Network. Building Local Commerce Through Web3.</span><span>Indonesia → ASEAN → Global</span></div></footer>
+</body></html>
