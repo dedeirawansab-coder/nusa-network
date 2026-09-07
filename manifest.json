@@ -1,9 +1,0 @@
-{
-  "name": "NUSA Apps",
-  "short_name": "NUSA",
-  "start_url": "./index.html",
-  "display": "standalone",
-  "background_color": "#071812",
-  "theme_color": "#071812",
-  "description": "NUSA Network Local Commerce Apps"
-}
